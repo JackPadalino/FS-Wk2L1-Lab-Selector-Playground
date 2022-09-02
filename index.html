@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <!--
+    Note: this is NOT the page on which the test specs execute!
+    However, there is script tag to load src/selector.js:
+    this will load your $ function/class into the global scope
+    so that you can use it!
+  -->
+  <head>
+    <style>
+      * {font-family: arial, sans-serif;}
+
+      #parent div {
+        height: 100px;
+        width: 100px;
+        margin: 1em;
+      }
+
+      .red {
+        background-color: red;
+      }
+
+      .green {
+        background-color: green;
+      }
+
+      .blue {
+        background-color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="parent">
+      <h1>Selector Playground</h1>
+      <p>
+        This file loads your "$" function into the global scope!
+        You can use it from your Dev Tools to manually test it out!
+        Just open your Dev Tools, go to the "Console" tab, and try entering some code!
+      </p>
+      <p>
+        Also, here are some colored blocks. Just for fun, you know.
+      </p>
+      <div class="red"></div>
+      <div class="green"></div>
+      <div class="blue"></div>
+    </div>
+  </body>
+
+  <script type="text/javascript" src="/src/selector.js"></script>
+</html>
